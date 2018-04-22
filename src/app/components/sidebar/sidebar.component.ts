@@ -5,7 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent implements OnInit
+{
+  private position: string;
+  private display: boolean;
 
   constructor() { }
 

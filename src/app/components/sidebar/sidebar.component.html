@@ -1,3 +1,19 @@
-<p>
-  sidebar works!
-</p>
+<p-sidebar
+  [(visible)]="display"
+  position="right">
+    <!-- must be dynamic content -->
+  <div>quick menu</div>
+  <ul>
+    <!-- <li>
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star (favoritos)
+    </li> -->
+    <li>
+      notas
+    </li>
+    <li>
+
+    </li>
+  </ul>
+</p-sidebar>
+
+<button type="text" (click)="display = true" pButton icon="fa-external-link-square" label="Show">Show</button>
