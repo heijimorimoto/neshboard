@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { AppSharedModule } from '../app.shared.module';
 import { ErrorComponent } from './error.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    AppSharedModule
   ],
   declarations: [ErrorComponent]
 })

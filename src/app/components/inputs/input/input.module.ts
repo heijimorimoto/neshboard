@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { AppSharedModule } from '../../../app.shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
-
 import { InputComponent } from './input.component';
 
 @NgModule({
   imports: [
-    CommonModule,
+    AppSharedModule,
     BrowserAnimationsModule,
     MatInputModule
   ],

@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { AppSharedModule } from '../../app.shared.module';
+import { TableModule as PrimeTable } from 'primeng/table';
 import { TableComponent } from './table.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    AppSharedModule,
+    PrimeTable
   ],
-  declarations: [TableComponent]
+  declarations: [
+    TableComponent
+  ],
+  exports: [
+    TableComponent
+  ]
 })
 export class TableModule { }

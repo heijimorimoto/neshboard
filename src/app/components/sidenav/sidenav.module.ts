@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
+import { AppSharedModule } from '../../app.shared.module';
 import { SidenavComponent } from './sidenav.component';
 import { SidenavService } from './services/sidenav.service';
 
 @NgModule({
   imports: [
-    CommonModule,
+    AppSharedModule,
     MatSidenavModule
   ],
   declarations: [SidenavComponent],

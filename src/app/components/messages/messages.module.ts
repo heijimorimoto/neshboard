@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { AppSharedModule } from '../../app.shared.module';
 import { GrowlComponent } from './growl/growl.component';
 import { AlertComponent } from './alert/alert.component';
 import { GrowlModule } from 'primeng/growl';
 
 @NgModule({
   imports: [
-    CommonModule,
+    AppSharedModule,
     GrowlModule
   ],
   declarations: [

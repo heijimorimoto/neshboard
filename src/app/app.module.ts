@@ -11,6 +11,8 @@ import { SidenavModule } from './components/sidenav/sidenav.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { BreadcrumbModule } from './components/breadcrumb/breadcrumb.module';
 import { SwitchModule } from './components/inputs/switch/switch.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SwitchModule } from './components/inputs/switch/switch.module';
     SidenavModule,
     SidebarModule,
     BreadcrumbModule,
-    SwitchModule
+    SwitchModule,
+    HttpClientModule,
+    ViewsModule
   ],
   providers: [],
   bootstrap: [

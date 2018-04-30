@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { AppSharedModule } from '../../app.shared.module';
 
 import { BreadcrumbComponent } from './breadcrumb.component';
 import { BreadcrumbModule as PrimengBreadcrumb} from 'primeng/breadcrumb';
 
 @NgModule({
   imports: [
-    CommonModule,
+    AppSharedModule,
     PrimengBreadcrumb
   ],
   declarations: [BreadcrumbComponent],

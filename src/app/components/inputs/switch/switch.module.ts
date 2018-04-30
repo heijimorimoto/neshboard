@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { AppSharedModule } from '../../../app.shared.module';
 import { SwitchComponent } from './switch.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    AppSharedModule
   ],
   declarations: [SwitchComponent],
   exports: [

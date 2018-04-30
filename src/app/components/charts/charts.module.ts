@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ChartsComponent } from './charts.component';
 
+import { AppSharedModule } from '../../app.shared.module';
+import { ChartsComponent } from './charts.component';
 import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   imports: [
-    CommonModule,
+    AppSharedModule,
     ChartModule
   ],
   declarations: [

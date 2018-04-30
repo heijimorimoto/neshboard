@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { AppSharedModule } from '../../../app.shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    AppSharedModule
   ],
   declarations: []
 })

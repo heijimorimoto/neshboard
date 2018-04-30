@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { ProductModule } from './product/product.module';
+import { AppSharedModule } from '../app.shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    AppSharedModule,
+    ProductModule
   ],
-  declarations: []
+  declarations: [],
+  exports: [
+    ProductModule
+  ]
 })
 export class ViewsModule { }
