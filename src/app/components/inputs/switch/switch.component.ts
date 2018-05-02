@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-switch',
   templateUrl: './switch.component.html',
-  styleUrls: ['./switch.component.css']
+  styleUrls: ['./switch.component.scss']
 })
-export class SwitchComponent implements OnInit {
+export class SwitchComponent implements OnInit
+{
+  checked: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }

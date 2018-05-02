@@ -15,12 +15,11 @@ export class ProductComponent implements OnInit
   ngOnInit()
   {
     this.http.getData('products')
-    .subscribe(result => this.setData(result));
+        .subscribe(result => this.setData(result));
   }
 
-  setData(data)
+  private setData(data): void
   {
     this.data = data;
   }
-
 }

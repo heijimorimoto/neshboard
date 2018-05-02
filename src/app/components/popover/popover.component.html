@@ -1,0 +1,12 @@
+<ng-template #popTemplate>  
+  <ng-content></ng-content>
+</ng-template>
+
+<button
+  type="button"
+  class="btn btn-success"
+  [popover]="popTemplate"
+  popoverTitle="My account"
+  placement="bottom">
+  Profile
+</button>

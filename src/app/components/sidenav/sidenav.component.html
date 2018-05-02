@@ -1,4 +1,4 @@
-<mat-drawer-container class="example-container" autosize>
+<!-- <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <p>It needs to change to be responsive and fixed with a backdrop</p>
   </mat-drawer>
@@ -9,4 +9,19 @@
     </button>
   </div>
 
-</mat-drawer-container>
+</mat-drawer-container> -->
+
+<ng-container>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="over" opened="false" class="example-sidenav"
+                  [fixedInViewport]="'fixed'">
+
+                  teste
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <button mat-button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</ng-container>

@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 
-import { ProductModule } from './product/product.module';
 import { AppSharedModule } from '../app.shared.module';
+import { UserModule } from './auth/user/user.module';
+import { ProductModule } from './product/product.module';
 
 @NgModule({
   imports: [
     AppSharedModule,
+    UserModule,
     ProductModule
   ],
-  declarations: [],
   exports: [
     ProductModule
   ]

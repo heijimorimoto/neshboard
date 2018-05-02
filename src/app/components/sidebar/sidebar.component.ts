@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,6 +9,7 @@ export class SidebarComponent implements OnInit
 {
   private position: string;
   private display: boolean;
+  @Input() private label: string;
 
   constructor() { }
 

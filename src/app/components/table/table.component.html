@@ -1,22 +1,26 @@
-<!-- <h3>Dynamic Columns</h3>
-<p-table [columns]="cols" [value]="cars">
+<h3>Products</h3>
+
+<p-table
+    [columns]="cols"
+    [value]="data.data"
+    [paginator]="true"
+    [rows]="10"
+    paginatorPosition="both">
+
     <ng-template pTemplate="header" let-columns>
         <tr>
-            <th *ngFor="let col of columns">
-                {{col.header}}
+            <th *ngFor="let col of cols">
+                {{ col.header }}
             </th>
         </tr>
     </ng-template>
+
     <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr>
-            <td *ngFor="let col of columns">
-                    {{rowData[col.field]}}
+            <td *ngFor="let col of cols">
+                {{ rowData[col.field] | truncate: 10 }}
             </td>
         </tr>
     </ng-template>
-</p-table> -->
-table
 
-<pre>
-    {{ data | json }}
-</pre>
+</p-table>

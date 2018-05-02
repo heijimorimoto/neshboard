@@ -1,1 +1,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// it needs to come from a 'dynamic' envrionment variable
+.header {
+    background-color: #61367b;
+    padding: 0.5em 0;
+}

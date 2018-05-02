@@ -1,16 +1,42 @@
-<header class="row">
-  <div class="col-3">
-    <app-sidenav></app-sidenav>
+<header class="header row">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-2">
+        <app-sidenav></app-sidenav>
+      </div>
+
+      <div class="col-5">
+        <input type="text" placeholder="search">
+      </div>
+
+      <div class="col-5">
+          
+          <app-switch></app-switch>
+        
+          <app-sidebar 
+            [label]="'favorites'">
+          </app-sidebar>
+
+          <button type="button" class="btn btn-xs">
+            M
+            <span class="badge badge-light">4</span>
+          </button>
+          <a href="#">
+              <span class="glyphicon glyphicon-cog"></span>
+          </a>
+
+        <app-popover>
+          <div><button type="button" class="btn btn-default">Edit Profile</button></div>
+          <div><button type="button" class="btn btn-success">Logout</button></div>
+        </app-popover>
+      </div>
+
+    </div>
+
   </div>
-  <div class="col-3">
-    <input type="text" placeholder="search">
-  </div>
-  <div class="col-4">
-    <app-switch></app-switch>
-  </div>
-  <div class="col-2">
-    perfil, configuracoes, logout
-  </div>
+
 </header>
 
 <main class="container">
@@ -18,7 +44,5 @@
   <app-breadcrumb></app-breadcrumb>
 
   <router-outlet></router-outlet>
-
-  <app-sidebar></app-sidebar>
 
 </main>

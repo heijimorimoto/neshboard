@@ -13,6 +13,7 @@ import { BreadcrumbModule } from './components/breadcrumb/breadcrumb.module';
 import { SwitchModule } from './components/inputs/switch/switch.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewsModule } from './views/views.module';
+import { PopoverModule } from './components/popover/popover.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ViewsModule } from './views/views.module';
     BreadcrumbModule,
     SwitchModule,
     HttpClientModule,
-    ViewsModule
+    ViewsModule,
+    PopoverModule
   ],
   providers: [],
   bootstrap: [
