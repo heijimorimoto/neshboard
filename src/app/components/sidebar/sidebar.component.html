@@ -11,11 +11,19 @@
       notas
     </li>
     <li>
-
+      Tasks Progress
+    </li>
+    <li>
+      Contacts
     </li>
   </ul>
 </p-sidebar>
 
-<button type="text" (click)="display = true" pButton icon="fa-external-link-square" label="Show">
+<button
+  pButton
+  class="btn btn-default"
+  (click)="display = true"
+  icon="fa-external-link-square"
+  label="Show">
   {{ label }}
 </button>

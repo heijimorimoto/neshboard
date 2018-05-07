@@ -15,17 +15,39 @@
 <!-- Begin page content -->
 <main role="main" class="container">
   
-  <h2 class="mt-5">
-    Welcome {{ title }}
-  </h2>
-
-  <div class="row">
-    <div class="col-md-4">
-      <app-charts [type]="'bar'"></app-charts>
+  <section class="row">
+    <div class="col-6">
+      <h4 class="mt-5">Welcome {{ title }}</h4>
     </div>
-    <div class="col-md-4">Based on widgets</div>
-    <div class="col-md-4">widgets concepts - api concepts</div>
-  </div>
+    <div class="col-6 mt-5">
+      14/04/1992
+    </div>
+  </section>
+
+  <section>
+    <h5>Análises</h5>
+    <div class="row">
+      <div class="col-md-4">
+        <app-charts [type]="'bar'"></app-charts>
+      </div>
+      <div class="col-md-4">Based on widgets</div>
+      <div class="col-md-4">
+        filiais
+        <app-charts [type]="'bar'"></app-charts>
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <h5>Projeções</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <app-charts [type]="'bar'"></app-charts>
+        </div>
+        <div class="col-md-4">Based on widgets</div>
+        <div class="col-md-4">widgets concepts - api concepts</div>
+      </div>
+    </section>
 
 </main>
 

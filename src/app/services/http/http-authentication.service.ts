@@ -15,4 +15,9 @@ export class HttpAuthenticationService
   {
     return this.http.get(`${this.endpoint}/${url}`);
   }
+
+  public storeData(url, body): Observable<any>
+  {
+    return this.http.post(`${this.endpoint}/${url}`, body);
+  }
 }

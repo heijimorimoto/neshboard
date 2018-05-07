@@ -9,6 +9,9 @@
 
     <ng-template pTemplate="header" let-columns>
         <tr>
+            <th style="width: 2.25em">
+                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
             <th *ngFor="let col of cols">
                 {{ col.header }}
             </th>
@@ -16,7 +19,10 @@
     </ng-template>
 
     <ng-template pTemplate="body" let-rowData let-columns="columns">
-        <tr>
+        <tr [pSelectableRow]="rowData">
+            <td>
+                <p-tableCheckbox [value]="rowData"></p-tableCheckbox>
+            </td>
             <td *ngFor="let col of cols">
                 {{ rowData[col.field] | truncate: 10 }}
             </td>

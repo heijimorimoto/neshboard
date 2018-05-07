@@ -4,4 +4,16 @@
 .header {
     background-color: #61367b;
     padding: 0.5em 0;
+    box-shadow: 0px 0px 3px 2px #9c9c9c;
+}
+
+.menu-settings {
+    
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        display: inline-block;
+    }
 }

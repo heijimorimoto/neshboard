@@ -1,14 +1,21 @@
-.example-container {
-    position: absolute;
-    top: 60px;
-    bottom: 60px;
-    left: 0;
-    right: 0;
+.mat-drawer-backdrop.mat-drawer-shown {
+  position: fixed !important;
+}
+
+.example-sidenav {
+  width: 200px;
+  background: rgba(59, 17, 142, 0.72);
+  left: 0;
+  position: fixed;
+}
+
+.nav-list {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    background-color: #624798;
+    padding: 0.5em;
+    color: white;
   }
-  
-  .example-sidenav {
-    display: flex;
-    width: 200px;
-    background: rgba(255, 0, 0, 0.5);
-    left: 0;
-  }
+}

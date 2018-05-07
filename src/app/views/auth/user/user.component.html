@@ -1,11 +1,49 @@
-<ul>
-  <li>Edit profile data</li>
-  <li>Email ( just 2 times )</li>
-  <li>password</li>
-</ul>
+<section>
+  bacgrkound
+</section>
+
+<section *ngIf="data">
+  
+  <div>
+    <app-avatar></app-avatar>
+  </div>
+
+  <div>
+    <b>Nome: </b>
+    {{ data?.name }}
+  </div>
+
+  <div>
+    <b>Email: </b>
+    {{ data?.email }}
+  </div>
+
+  <div>
+    <b>Criado em: </b>
+    {{ data?.created_at }}
+  </div>
+
+  <div>
+    <b>Última atualização: </b>
+    {{ data?.updated_at }}
+  </div>
+
+</section>
+
+<hr>
 
 <pre>
-  obs: last updated profile
-  2: last login
-  3: connected apps
+
+  <ul>
+    <li>Edit profile data</li>
+    <li>Email ( just 2 times )</li>
+    <li>password</li>
+  </ul>
+  
+  <pre>
+    obs: last updated profile
+    2: last login
+    3: connected apps
+  </pre>
+
 </pre>

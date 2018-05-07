@@ -1,3 +1,6 @@
-<p>
-  growl works!
-</p>
+<p-growl
+    [(value)]="msgs"
+    [life]="life">
+</p-growl>
+
+<button type="button" pButton (click)="showMultiple()" label="Multiple"></button>

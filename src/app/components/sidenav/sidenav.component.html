@@ -1,27 +1,34 @@
-<!-- <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>It needs to change to be responsive and fixed with a backdrop</p>
-  </mat-drawer>
-
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Menu
-    </button>
-  </div>
-
-</mat-drawer-container> -->
-
 <ng-container>
   <mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="over" opened="false" class="example-sidenav"
-                  [fixedInViewport]="'fixed'">
 
-                  teste
+    <mat-sidenav #sidenav mode="over" opened="false" class="example-sidenav">
+
+      <ul class="nav-list">
+        <li>
+          <!-- create a service method to use instead of routerLink -->
+          <a [routerLink]="['/']">
+            Root
+          </a>
+        </li>
+        <li>
+          <!-- create a service method to use instead of routerLink -->
+          <a [routerLink]="['/dashboard']">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <!-- create a service method to use instead of routerLink -->
+          <a [routerLink]="['/products']">
+            Produtos
+          </a>
+        </li>
+      </ul>
+    
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <button mat-button (click)="sidenav.toggle()">Toggle</button>
+      <button mat-button (click)="sidenav.toggle()">Menu</button>
     </mat-sidenav-content>
-  </mat-sidenav-container>
 
+  </mat-sidenav-container>
 </ng-container>

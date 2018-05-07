@@ -1,0 +1,18 @@
+<p-dialog
+    [(visible)]="display"
+    [modal]="true"
+    width="300"
+    [header]="headerTitle"
+    [draggable]="false"
+    appendTo="body">
+    
+    <ng-content></ng-content>
+
+</p-dialog>
+
+<button
+    pButton
+    (click)="showDialog()"
+    [icon]="btnIcon"
+    [label]="btnLabel">
+</button>
