@@ -6,7 +6,9 @@
   type="button"
   class="btn btn-success"
   [popover]="popTemplate"
-  popoverTitle="My account"
+  [popoverTitle]="title"
   placement="bottom">
-  Profile
+
+  <i [class]="icon"></i>
+  {{ label }}
 </button>
